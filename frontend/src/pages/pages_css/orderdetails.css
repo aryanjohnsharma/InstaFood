@@ -1,0 +1,259 @@
+
+/* Order Details Container */
+.order-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Order Details Box Styling */
+.order-details-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 700px; /* Wider to display details clearly */
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+}
+
+.order-details-box h2 {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.order-details-intro {
+    font-size: 1em;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+/* Order Info Section */
+.order-info-section {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.order-info-section .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 1em;
+}
+
+.info-label {
+    font-weight: 500;
+    color: #555;
+    flex-basis: 40%;
+}
+
+.info-value {
+    font-weight: 600;
+    color: #333;
+    flex-basis: 60%;
+    text-align: right;
+    word-break: break-word; /* Ensure long text wraps */
+}
+
+.status-delivered {
+    color: #28a745; /* Green for delivered status */
+    font-weight: 700;
+}
+
+/* Items Breakdown Section */
+.items-breakdown-section {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.items-breakdown-section h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.item-list .item-detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.item-name {
+    flex-grow: 1;
+    text-align: left;
+    font-weight: 500;
+}
+
+.item-qty {
+    margin-right: 15px;
+    color: #7f8c8d;
+}
+
+.item-price {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Bill Summary Section */
+.bill-summary-section {
+    text-align: left;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.bill-summary-section h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.bill-summary-section .bill-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+.bill-summary-section .bill-row span:first-child {
+    text-align: left;
+}
+
+.bill-summary-section .bill-row span:last-child {
+    font-weight: 600;
+    color: #333;
+}
+
+.bill-summary-section .total-row {
+    border-top: 1px dashed #ccc;
+    padding-top: 15px;
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.back-to-orders-button,
+.home-button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.back-to-orders-button {
+    background-color: #007bff; /* Blue for back to orders */
+    color: white;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+.back-to-orders-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.home-button {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.home-button:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .order-details-box {
+        padding: 30px 20px;
+        margin: 10px;
+    }
+
+    .order-details-box h2 {
+        font-size: 1.8em;
+    }
+
+    .order-details-intro {
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+
+    .order-info-section .info-row,
+    .items-breakdown-section .item-list .item-detail-row,
+    .bill-summary-section .bill-row {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
+        gap: 5px;
+        padding: 5px 0;
+    }
+
+    .info-label, .item-name, .bill-summary-section .bill-row span:first-child {
+        flex-basis: auto;
+        text-align: left;
+        font-size: 0.9em;
+    }
+
+    .info-value, .item-qty, .item-price, .bill-summary-section .bill-row span:last-child {
+        flex-basis: auto;
+        text-align: left;
+        font-size: 1em;
+    }
+
+    .status-delivered {
+        margin-top: 5px; /* Space for status when stacked */
+    }
+
+    .items-breakdown-section h3, .bill-summary-section h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .bill-summary-section .total-row {
+        font-size: 1.1em;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    .back-to-orders-button, .home-button {
+        padding: 12px;
+        font-size: 1em;
+    }
+}

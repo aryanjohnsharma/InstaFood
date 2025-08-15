@@ -1,0 +1,207 @@
+
+
+/* Confirmation Container */
+.confirmation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Confirmation Box Styling */
+.confirmation-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 550px; /* Slightly wider for content */
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+}
+
+.success-icon {
+    font-size: 3.5em;
+    color: #28a745; /* Green checkmark */
+    margin-bottom: 15px;
+    display: block; /* Ensure it takes its own line */
+}
+
+.confirmation-box h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.order-id {
+    font-size: 1.1em;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* Delivery Info Section */
+.delivery-info {
+    background-color: #f0f8ff; /* Light blue background */
+    border: 1px solid #cceeff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.delivery-info h3 {
+    font-size: 1.3em;
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.time-estimate {
+    font-size: 1.1em;
+    color: #555;
+    margin: 0;
+}
+
+.time-estimate span {
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* Summary Section */
+.summary-section {
+    border-top: 1px solid #eee;
+    padding-top: 25px;
+    margin-top: 25px;
+}
+
+.summary-section h3 {
+    font-size: 1.3em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.order-items-summary {
+    margin-bottom: 20px;
+}
+
+.item-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.item-name-summary {
+    font-weight: 500;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.item-qty-summary {
+    color: #7f8c8d;
+}
+
+.total-paid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px dashed #ccc;
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.total-paid .amount {
+    color: #28a745; /* Green for the total amount */
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between buttons */
+    margin-top: 40px;
+}
+
+.track-order-button,
+.home-button {
+    display: block; /* Make links behave like block elements */
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.track-order-button {
+    background-color: #007bff; /* Blue for tracking */
+    color: white;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+.track-order-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.home-button {
+    background-color: #f0f0f0; /* Light gray for home */
+    color: #333;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.home-button:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .confirmation-box {
+        padding: 30px 20px;
+        margin: 10px;
+    }
+
+    .success-icon {
+        font-size: 3em;
+    }
+
+    .confirmation-box h2 {
+        font-size: 1.6em;
+    }
+
+    .order-id {
+        font-size: 1em;
+    }
+
+    .delivery-info h3, .summary-section h3 {
+        font-size: 1.2em;
+    }
+
+    .time-estimate, .item-summary, .total-paid {
+        font-size: 0.95em;
+    }
+
+    .track-order-button, .home-button {
+        padding: 12px;
+        font-size: 1em;
+    }
+}

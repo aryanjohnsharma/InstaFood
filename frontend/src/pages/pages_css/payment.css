@@ -1,0 +1,170 @@
+
+
+/* Payment Container */
+.payment-container {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Payment Box Styling */
+.payment-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px; /* Wider for better bill display */
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+}
+
+.payment-box h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+/* Order Items Section */
+.order-items {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.order-items .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+.item-name {
+    flex-grow: 1;
+    text-align: left;
+    font-weight: 500;
+}
+
+.item-quantity {
+    margin-right: 15px;
+    color: #7f8c8d;
+}
+
+.item-price {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Bill Details Section */
+.bill-details {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.bill-details .bill-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+.bill-details .bill-row span:first-child {
+    text-align: left;
+}
+
+.bill-details .bill-row span:last-child {
+    font-weight: 600;
+    color: #333;
+}
+
+.bill-details .total-row {
+    border-top: 1px dashed #ccc; /* Dashed line for total */
+    padding-top: 15px;
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* Pay Button Styling */
+.pay-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745; /* Green button for payment */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.2);
+}
+
+.pay-button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.pay-button:active {
+    transform: translateY(0);
+}
+
+/* Back Link */
+.back-link {
+    margin-top: 25px;
+    font-size: 0.95em;
+    color: #666;
+}
+
+.back-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.back-link a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .payment-box {
+        padding: 30px 20px;
+        margin: 10px;
+    }
+
+    .payment-box h2 {
+        font-size: 1.8em;
+    }
+
+    .order-items .item,
+    .bill-details .bill-row {
+        font-size: 0.95em;
+    }
+
+    .bill-details .total-row {
+        font-size: 1.1em;
+    }
+
+    .pay-button {
+        padding: 12px;
+        font-size: 1.1em;
+    }
+}

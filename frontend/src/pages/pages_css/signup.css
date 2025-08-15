@@ -1,0 +1,159 @@
+.signup-page {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f2f5 0%, #e0e5ec 100%);
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Signup Container - Centers the signup box */
+.signup-container {
+    display: flex;
+    background-color: #0056b3;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px; /* Padding for smaller screens */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+/* Signup Box Styling */
+.signup-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Softer, larger shadow */
+    text-align: center;
+    max-width: 450px; /* Slightly wider for more input fields */
+    width: 100%; /* Ensure it takes full width on smaller screens */
+    border: 1px solid #e0e0e0; /* Subtle border */
+    box-sizing: border-box;
+}
+
+.signup-box h2 {
+    font-size: 2.2em; /* Larger heading */
+    margin-bottom: 10px;
+    color: #2c3e50; /* Darker heading color */
+    font-weight: 700; /* Bolder heading */
+}
+
+.signup-box p {
+    font-size: 1em;
+    color: #7f8c8d; /* Lighter paragraph color */
+    margin-bottom: 30px;
+}
+
+/* Input Group Styling */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+    color: #555;
+    font-weight: 500;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="password"],
+.input-group input[type="tel"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Slightly more rounded inputs */
+    font-size: 1em;
+    box-sizing: border-box; /* Crucial for consistent width */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="email"]:focus,
+.input-group input[type="password"]:focus {
+    border-color: #007bff; /* Blue focus border */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Subtle focus glow */
+}
+
+/* Signup Button Styling */
+.signup-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #28a745; /* Green button for signup */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.2); /* Button shadow */
+    margin-top: 10px; /* Space above button */
+}
+
+.signup-button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.signup-button:active {
+    transform: translateY(0); /* Press down effect */
+}
+
+/* Login Link */
+.login-link {
+    margin-top: 30px;
+    font-size: 0.95em;
+    color: #666;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .signup-box {
+        padding: 30px 20px; /* Adjust padding for smaller screens */
+        margin: 10px; /* Add some margin to avoid sticking to edges */
+    }
+
+    .signup-box h2 {
+        font-size: 1.8em;
+    }
+
+    .signup-box p {
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+
+    .input-group label {
+        font-size: 0.9em;
+    }
+
+    .input-group input {
+        padding: 10px 12px;
+        font-size: 0.95em;
+    }
+
+    .signup-button {
+        padding: 12px;
+        font-size: 1em;
+    }
+}

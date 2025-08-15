@@ -1,0 +1,375 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+header {
+  background-color: #1a1a1a;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 0; /* We'll control spacing manually */
+}
+
+
+.cart-link {
+  position: relative;
+}
+
+
+.cart-badge {
+  background-color: #ff3333;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  right: -12px;
+}
+
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-right: 25px; /* Space between logo and search */
+  transition: all 0.2s ease;
+}
+
+.logo:hover{
+  transform: translateY(-5px);
+  transform: e;
+  
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+  white-space: nowrap;
+}
+
+
+
+.search-bar {
+  flex: 50;
+  position: relative;  
+}
+
+
+
+
+.search-bar input {
+  width: 100%;
+  padding: 12px 45px 12px 15px; /* Right padding for icon */
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.search-bar input:focus {
+  outline: 2px solid #122f8c;
+  box-shadow: 0 0 8px rgba(9, 134, 145, 0.4);
+}
+
+
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+  pointer-events: none;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+  margin-left: 15px; /* Space between search and actions */
+}
+
+
+.p-size{
+  font-size: 16px;
+  font-weight: 800;
+}
+
+
+.user-actions a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  white-space: nowrap;
+  padding: 6px 0;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.user-actions a:hover {
+  opacity: 0.9;
+  transform: translateY(-3px);
+  color: rgb(124, 124, 233);
+}
+
+
+.location-bar {
+    background-color: #2b2b2b;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.location-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-button {
+  cursor: pointer;
+  color: white;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  min-width: 160px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  border-radius: 6px;
+}
+
+.dropdown-menu p,
+.dropdown-menu a {
+  margin: 0;
+  padding: 10px 15px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.dropdown-menu p:hover,
+.dropdown-menu a:hover {
+  background-color: #f5f5f5;
+}
+
+
+
+.location-icon {
+    margin-right: 10px;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.restaurant-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+}
+
+.restaurant-image {
+    height: 180px;
+    background-color: #eee;
+    position: relative;
+    overflow: hidden;
+}
+
+.restaurant-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.offer-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #cb202d;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.restaurant-info {
+    padding: 15px;
+}
+
+.restaurant-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.restaurant-cuisine {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.restaurant-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.price {
+    color: #666;
+}
+
+.delivery-time {
+    color: #333;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #2b2b2b;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+    color: #aaa;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
