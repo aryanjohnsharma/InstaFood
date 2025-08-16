@@ -14,7 +14,7 @@ public class EmailService {
         message.setTo(toEmail);
         message.setSubject("Your OTP to reset password: ");
         message.setText("Your OTP is : " + otp);
-        message.setFrom("nabimoon7864@gmail.com");
+        message.setFrom("aryanjohnsharma@gmail.com");
         mailSender.send(message);
     }
 }
